@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISProba_3Улица",
+  "modelName": "i-i-s-proba-3-улица",
+  "className": "Улица",
+  "nameSpace": "IIS.Proba_3",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "квартира",
+      "relatedTo": "i-i-s-proba-3-квартира",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УлицаE",
+      "modelName": "i-i-s-proba-3-улица",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Номер",
+          "lookupValueField": "номер",
+          "relationName": "Квартира",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Номер",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Квартира",
+          "name": "квартира",
+          "relatedTo": "i-i-s-proba-3-квартира",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "УлицаL",
+      "modelName": "i-i-s-proba-3-улица",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Квартира",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Номер",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер",
+          "name": "квартира",
+          "relatedTo": "i-i-s-proba-3-квартира",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,1 @@
+docker-compose -p proba_3 up -d

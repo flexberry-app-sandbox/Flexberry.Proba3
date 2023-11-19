@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proba-3-квартира-e",
+  "editForm": "i-i-s-proba-3-квартира-e",
+  "external": false,
+  "caption": "Квартира",
+  "name": "IISProba_3КвартираL",
+  "className": "КвартираL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba-3-квартира",
+      "modelProjection": "КвартираL"
+    }
+  ]
+}

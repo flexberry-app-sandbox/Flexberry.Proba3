@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Квартира",
+      "projection": "КвартираL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Улица",
+  "name": "IISProba_3УлицаE",
+  "className": "УлицаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba-3-улица",
+      "modelProjection": "УлицаE"
+    }
+  ]
+}
